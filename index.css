@@ -9,21 +9,21 @@ body{
 }
 #contentWrap{
   padding:10px;
+  
   overflow:hidden;
   }
   
   #chat{
   padding:10px;
-  float:left; 
   width:200px;
   margin:150px;
-  
+  float:left; 
   }
   
   #usuarios{
          /*tambien puede poner float:right, para que se alineé a la derecha */
     padding:10px;
-    width:200px;
+    width:100px;
     margin:20px;
     float:left;  
   }
