@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat en construccion.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    
+    <script src="https://kit.fontawesome.com/279c3614b2.js"></script>
+</head>
+<body>
+    <nav class="navbar  bg-light">
+    <a class="navbar-brand mx-auto" href="/">Chat Online.</a></nav>
+   
+           
+<br><br>
+<div class="card col-md-5 mt-9  mx-auto" id="nickWrap" >
+    <div class="card-header">
+<h3>Nombre de usuario</h3>
+    </div>
+    <p id="nickError"></p>
+    <div class="card-body">
+     <form id="nickForm">
+          <input type="text" id="nickName" class="form-control ">
+           <button type="submit" class="btn btn-primary bnt-block mt-2">
+                ENTRAR   <i class="fab fa-ello"></i>
+          </button>
+    </form>
+    </div>
+</div>
+<div class="conteiner" id="contentWrap">
+    <div  id="usuarios">
+        <div class="card">
+             <div class="card-header">
+                 <h3>Users</h3>
+             </div>
+            <div class="card-body">
+                 <div id="usersNames">|</div>
+           </div>
+        </div>
+    </div>
+    <div id="chat"> 
+         <div class="card">
+            <div class="card-header">
+                <g4>Chatiemos.</g4>
+            </div>
+            <div id="chat" class="card-body"></div>
+             <form id="messageForm" class="card-footer">
+                 <div class="input-group-append">
+                      <input type="text" id="message" class="form-control">
+                      <button type="submit" class="btn btn-dark">
+                         ENVIAR<i class="far fa-comment-dots"></i>
+                     </button>
+                 </div>
+             </form>
+             </div>
+         </div>
+</div>
+    
+     <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
